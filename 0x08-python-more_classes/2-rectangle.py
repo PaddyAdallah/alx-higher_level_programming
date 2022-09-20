@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 '''module: 2-rectangle
-This is class Rectangle
+This is a Rectangle class.
 '''
 
 
@@ -72,4 +72,4 @@ class Rectangle:
     def perimeter(self):
         if self.__height == 0 or self.width == 0:
             return 0
-        return (self.__height + self.width) * 
+        return (self.__height + self.width) * 2
