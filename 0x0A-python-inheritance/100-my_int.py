@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+""" Program that inherits from int class """
+
+
 class MyInt(int):
-    def __init__(self, value):
-        self.num = value
+    """ Class that inherits from class int"""
 
     def __eq__(self, other):
-        return self.num != other
+        """ Method that returns != check """
+        return int.__ne__(self, other)
 
     def __ne__(self, other):
-        return self.num == other
+        """ Method that returns == check """
+        return int.__eq__(self, other)

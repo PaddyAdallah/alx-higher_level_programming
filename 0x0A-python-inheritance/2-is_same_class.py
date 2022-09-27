@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+""" Program that validate that object is exact the same """
 
 
 def is_same_class(obj, a_class):
-    """'''function: is_same_class
-    obj: an object
-    a_class: a class
-    Returns: Bool
+    """ Function that returns True/False if obj is a type of a_class
+    Args:
+        obj: object
+        a_class: class type
+    Returns:
+        True if type of obj is a_class
+        False, otherwise
     """
-    return type(obj) == a_class
+    return type(obj) is a_class
